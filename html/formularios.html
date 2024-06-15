@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="">
+        <h1>Validacion</h1>
+        <input type="text" required minlength="5" maxlength="15" pattern="[A-Za-z]+"/>
+        <input type="number" required min="5" max="15"/>
+        <button type="submit">Enviar</button>
+    </form>
+    <h1>Formularios Html</h1>
+    <form action="">
+        <fieldset>
+            <legend>Informacion personal</legend>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="nombre"/>
+            </div>
+            <br/>
+            <div>
+                <label for="descripcion">Descripcion</label>
+                <textarea name="descripcion" id="descripcion"></textarea>
+            </div>
+            <br/>
+            <div>
+                <label for="">Email</label>
+                <input type="email">
+            </div>
+            <br/>
+            <div>
+                <label for="">Password</label>
+                <input type="password">
+            </div>
+            <br/>
+            <div>
+                <label for="">Radio</label>
+                <label for="genero" id="hombre">Hombre</label>
+                <input type="radio" name="genero" value="hombre" id="hombre">
+                <label for="genero" id="mujer">Mujer</label>
+                <input type="radio" name="genero" value="mujer" id="mujer">
+            </div>
+            <br/>
+            <div>
+                <label for="">Select</label>
+                <select>
+                    <option value="hombre">hombre</option>
+                    <option value="mujer">mujer</option>
+                </select>
+            </div>
+            <br/>
+            <div>
+                <label for="">Checkbox</label>
+                <label for="">
+                    <input type="checkbox" /> Mayor de edad
+                </label>
+                <label for="">
+                    <input type="checkbox" /> menor de edad
+                </label>
+            </div>
+            <br/>
+            <div>
+                <label for="">Color</label>
+                <input type="color">
+            </div>
+            <br/>
+            <div>
+                <label for="">Fecha</label>
+                <input type="date">
+            </div>
+            <br/>
+            <div>
+                <label for="">Archivo</label>
+                <input type="file">
+            </div>
+            <br/>
+            <div>
+                <label for="">Imagen</label>
+                <input type="image" src="images/piedra-del-sol-calendario-azteca-significado.gif" width="50px">
+            </div>
+            <br/>
+            <div>
+                <label for="">Oculto</label>
+                <input type="hidden" name="oculto" value="oculto">
+            </div>
+            <br/>
+            <div>
+                <label for="">Numero</label>
+                <input type="number">
+            </div>
+            <br/>
+            <div>
+                <label for="">Rango</label>
+                <input type="range" name="rango">
+            </div>
+            <br/>
+            <div>
+                <label for="">Buscar</label>
+                <input type="search" name="buscar">
+                <button>Buscar</button>
+            </div>
+            <br/>
+            <div>
+                <label for="">Telefono</label>
+                <input type="tel" name="telefono">
+            </div>
+            <br/>
+            <div>
+                <label for="">Hora</label>
+                <input type="time" name="tiempo">
+            </div>
+            <br/>
+            <div>
+                <label for="">Mes</label>
+                <input type="month" name="mes">
+            </div>
+            <br/>
+            <div>
+                <label for="">Sitio web</label>
+                <input type="url" name="url">
+            </div>
+            <br/>
+            <div>
+                <label for="">Barra de progreso</label>
+                <progress max="100" value="45"></progress>
+            </div>
+            <br/>
+            <div>
+                <label for="">Meter</label>
+                <meter value="45"></meter>
+            </div>
+            <br/>
+            <div>
+                <label for="">Lista de datos</label>
+                <input list="frutas" name="fruta"/>
+                <datalist id="frutas">
+                    <option value="Manzana"></option>
+                    <option value="Naranja"></option>
+                    <option value="Uva"></option>
+                    <option value="sandia"></option>
+                </datalist>
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Enviar Formulario" />
+        <button type="submit">Enviar</button>
+        <input type="reset" value="Limpiar Formulario" />
+    </form>
+</body>
+</html>
